@@ -1,8 +1,8 @@
 # unique-by
 
 [![build status][build-png]][build]
-[![Coverage Status][cover-png]][cover]
 [![Davis Dependency status][dep-png]][dep]
+
 [![NPM][npm-png]][npm]
 
 Create a unique array of objects.
@@ -12,10 +12,12 @@ Create a unique array of objects.
 ```js
 var uniqueBy = require('unique-by');
 
+// With a function
 uniqueBy(arr, function getValue(obj) {
   return obj.someKey;
 });
 
+// With a key string
 uniqueBy(arr, 'someKey');
 ```
 
@@ -44,11 +46,7 @@ uniqueBy(arr, 'someKey');
 
   [build-png]: https://secure.travis-ci.org/mlmorg/unique-by.png
   [build]: https://travis-ci.org/mlmorg/unique-by
-  [cover-png]: https://coveralls.io/repos/mlmorg/unique-by/badge.png
-  [cover]: https://coveralls.io/r/mlmorg/unique-by
   [dep-png]: https://david-dm.org/mlmorg/unique-by.png
   [dep]: https://david-dm.org/mlmorg/unique-by
-  [test-png]: https://ci.testling.com/mlmorg/unique-by.png
-  [tes]: https://ci.testling.com/mlmorg/unique-by
   [npm-png]: https://nodei.co/npm/unique-by.png?stars&downloads
   [npm]: https://nodei.co/npm/unique-by
